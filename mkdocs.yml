@@ -1,0 +1,40 @@
+site_name: OE4M74 Lab Documentation
+site_description: Learn important machine learning concepts hands-on Python code.
+
+repo_url: https://github.com/ARGF0RCE/OE4M74-Lab
+repo_name: ARGF0RCE/OE4M74-Lab
+
+theme:
+  name: material
+  logo: assets/iiitdmj-logo.jpg
+  favicon: assets/iiitdmj-logo.jpg
+  features:
+    - navigation.instant
+    - navigation.top
+  palette:
+    primary: black
+
+markdown_extensions:
+  - meta
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  
+plugins:
+ - mkdocs-jupyter:
+    include_source: True
+ - search
+ - social
+
+edit_uri: ""
+
+nav:
+  - Home: 'index.md'
+  - 00. Getting Started with Python: 'Introduction_to_Python_Programming.ipynb'
+  - 01. PyTorch Machine Learning Workflow: 'Data_Processing_Data_representation_and_visualization.ipynb'
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ARGF0RCE/OE4M74-Lab
