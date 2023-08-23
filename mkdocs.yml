@@ -21,7 +21,10 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tasklist:
       custom_checkbox: true
-  
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: "#"
 plugins:
  - mkdocs-jupyter:
     include_source: True
@@ -32,9 +35,9 @@ edit_uri: ""
 
 nav:
   - Home: 'index.md'
+  - Local Setup: 'setup.md'
   - 00. Getting Started with Python: 'Introduction_to_Python_Programming.ipynb'
-  - 01. PyTorch Machine Learning Workflow: 'Data_Processing_Data_representation_and_visualization.ipynb'
-
+  - 01. Data Processing Data representation and visualization: 'Data_Processing_Data_representation_and_visualization.ipynb'
 extra:
   social:
     - icon: fontawesome/brands/github
