@@ -1,0 +1,1257 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Learn important machine learning concepts hands-on Python code.">
+      
+      
+        <meta name="author" content="Aditya Ramesh Ganti">
+      
+      
+        <link rel="canonical" href="https://ARGF0RCE.github.io/OE4M74-Lab/setup/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../Introduction_to_Python_Programming/">
+      
+      
+      <link rel="icon" href="../assets/iiitdmj-logo.jpg">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.2.5">
+    
+    
+      
+        <title>Local Installation Setup for OE4M74 Lab - OE4M74 Lab Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.0e669242.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.85d0ee34.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Local Installation Setup for OE4M74 Lab - OE4M74 Lab Documentation" >
+      
+        <meta  property="og:description"  content="Learn important machine learning concepts hands-on Python code." >
+      
+        <meta  property="og:image"  content="https://ARGF0RCE.github.io/OE4M74-Lab/assets/images/social/setup.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://ARGF0RCE.github.io/OE4M74-Lab/setup/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Local Installation Setup for OE4M74 Lab - OE4M74 Lab Documentation" >
+      
+        <meta  name="twitter:description"  content="Learn important machine learning concepts hands-on Python code." >
+      
+        <meta  name="twitter:image"  content="https://ARGF0RCE.github.io/OE4M74-Lab/assets/images/social/setup.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="indigo">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#local-installation-setup-for-machine-learning-and-ai-course" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="OE4M74 Lab Documentation" class="md-header__button md-logo" aria-label="OE4M74 Lab Documentation" data-md-component="logo">
+      
+  <img src="../assets/iiitdmj-logo.jpg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            OE4M74 Lab Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Local Installation Setup for OE4M74 Lab
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ARGF0RCE/OE4M74-Lab" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ARGF0RCE/OE4M74-Lab
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="OE4M74 Lab Documentation" class="md-nav__button md-logo" aria-label="OE4M74 Lab Documentation" data-md-component="logo">
+      
+  <img src="../assets/iiitdmj-logo.jpg" alt="logo">
+
+    </a>
+    OE4M74 Lab Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ARGF0RCE/OE4M74-Lab" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ARGF0RCE/OE4M74-Lab
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Local Setup
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Local Setup
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#windows-native" class="md-nav__link">
+    Windows Native
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#windows-wsl2" class="md-nav__link">
+    Windows WSL2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cpu" class="md-nav__link">
+    CPU
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verify-install" class="md-nav__link">
+    Verify install:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nightly" class="md-nav__link">
+    Nightly
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verify-install_1" class="md-nav__link">
+    Verify install:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hardware-requirements" class="md-nav__link">
+    Hardware requirements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-requirements" class="md-nav__link">
+    System requirements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software-requirements" class="md-nav__link">
+    Software requirements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-by-step-instructions" class="md-nav__link">
+    Step-by-step instructions
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Introduction_to_Python_Programming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Python Programming for AI &amp; ML
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Data_Processing_Data_representation_and_visualization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Processing Data representation and visualization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Data_Processing_and_EDA_with_IRIS_Dataset/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Preprocessing and EDA with the Iris Dataset
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#windows-native" class="md-nav__link">
+    Windows Native
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#windows-wsl2" class="md-nav__link">
+    Windows WSL2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cpu" class="md-nav__link">
+    CPU
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verify-install" class="md-nav__link">
+    Verify install:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nightly" class="md-nav__link">
+    Nightly
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verify-install_1" class="md-nav__link">
+    Verify install:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hardware-requirements" class="md-nav__link">
+    Hardware requirements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-requirements" class="md-nav__link">
+    System requirements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software-requirements" class="md-nav__link">
+    Software requirements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-by-step-instructions" class="md-nav__link">
+    Step-by-step instructions
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="local-installation-setup-for-machine-learning-and-ai-course">Local Installation Setup for Machine Learning and AI Course<a class="headerlink" href="#local-installation-setup-for-machine-learning-and-ai-course" title="Permanent link">#</a></h1>
+<p>This guide is for the latest stable version of TensorFlow. For the
+preview build <em>(nightly)</em>, use the pip package named
+<code>tf-nightly</code>. Refer to <a href="./source#tested_build_configurations">these tables</a> for
+older TensorFlow version requirements. For the CPU-only build, use the pip
+package named <code>tensorflow-cpu</code>.</p>
+<p>Here are the quick versions of the install commands if you have the base software installed. Scroll down for the
+step-by-step instructions.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Linux</label><label for="__tabbed_1_2">MacOS</label><label for="__tabbed_1_3">Windows</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<blockquote>
+<p>Note: Starting with TensorFlow <code>2.10</code>, Linux CPU-builds for Aarch64/ARM64
+processors are built, maintained, tested and released by a third party:
+<a href="https://aws.amazon.com/">AWS</a>.
+Installing the <a href="https://pypi.org/project/tensorflow/"><code>tensorflow</code></a>
+package on an ARM machine installs AWS's
+<a href="https://pypi.org/project/tensorflow-cpu-aws/"><code>tensorflow-cpu-aws</code></a> package.
+They are provided as-is. Tensorflow will use reasonable efforts to maintain
+the availability and integrity of this pip package. There may be delays if
+the third party fails to release the pip package. See
+<a href="https://blog.tensorflow.org/2022/09/announcing-tensorflow-official-build-collaborators.html">this blog post</a>
+for more information about this collaboration.</p>
+</blockquote>
+<div class="highlight"><pre><span></span><code>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span><span class="nv">cudatoolkit</span><span class="o">=</span><span class="m">11</span>.8.0
+python3<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>nvidia-cudnn-cu11<span class="o">==</span><span class="m">8</span>.6.0.163<span class="w"> </span><span class="nv">tensorflow</span><span class="o">==</span><span class="m">2</span>.13.*
+
+To<span class="w"> </span>install<span class="w"> </span>additional<span class="w"> </span>packages<span class="w"> </span>required<span class="w"> </span><span class="k">for</span><span class="w"> </span>the<span class="w"> </span>course<span class="w"> </span>such<span class="w"> </span>as<span class="w"> </span>scikit-learn,<span class="w"> </span>pandas,<span class="w"> </span>pillow,<span class="w"> </span>and<span class="w"> </span>Jupyter,<span class="w"> </span>use<span class="w"> </span>the<span class="w"> </span>following<span class="w"> </span>command:
+</code></pre></div>
+<p><div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>scikit-learn<span class="w"> </span>pandas<span class="w"> </span>pillow<span class="w"> </span>jupyter
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>-p<span class="w"> </span><span class="nv">$CONDA_PREFIX</span>/etc/conda/activate.d
+<span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;CUDNN_PATH=$(dirname $(python -c &quot;import nvidia.cudnn;print(nvidia.cudnn.__file__)&quot;))&#39;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span><span class="nv">$CONDA_PREFIX</span>/etc/conda/activate.d/env_vars.sh
+<span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;export LD_LIBRARY_PATH=$CUDNN_PATH/lib:$CONDA_PREFIX/lib/:$LD_LIBRARY_PATH&#39;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span><span class="nv">$CONDA_PREFIX</span>/etc/conda/activate.d/env_vars.sh
+<span class="nb">source</span><span class="w"> </span><span class="nv">$CONDA_PREFIX</span>/etc/conda/activate.d/env_vars.sh
+<span class="c1"># Verify install:</span>
+python3<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import tensorflow as tf; print(tf.config.list_physical_devices(&#39;GPU&#39;))&quot;</span>
+</code></pre></div></p>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="c1"># There is currently no official GPU support for MacOS.</span>
+python3<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>tensorflow
+
+To<span class="w"> </span>install<span class="w"> </span>additional<span class="w"> </span>packages<span class="w"> </span>required<span class="w"> </span><span class="k">for</span><span class="w"> </span>the<span class="w"> </span>course<span class="w"> </span>such<span class="w"> </span>as<span class="w"> </span>scikit-learn,<span class="w"> </span>pandas,<span class="w"> </span>pillow,<span class="w"> </span>and<span class="w"> </span>Jupyter,<span class="w"> </span>use<span class="w"> </span>the<span class="w"> </span>following<span class="w"> </span>command:
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>scikit-learn<span class="w"> </span>pandas<span class="w"> </span>pillow<span class="w"> </span>jupyter
+<span class="c1"># Verify install:</span>
+python3<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import tensorflow as tf; print(tf.reduce_sum(tf.random.normal([1000, 1000])))&quot;</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<h2 id="windows-native">Windows Native<a class="headerlink" href="#windows-native" title="Permanent link">#</a></h2>
+<p>Caution: TensorFlow <code>2.10</code> was the <strong>last</strong> TensorFlow release that
+supported GPU on native-Windows.
+Starting with TensorFlow <code>2.11</code>, you will need to install
+<a href="https://tensorflow.org/install/pip#windows-wsl2">TensorFlow in WSL2</a>,
+or install <code>tensorflow</code> or <code>tensorflow-cpu</code> and, optionally, try the
+<a href="https://github.com/microsoft/tensorflow-directml-plugin#tensorflow-directml-plugin-">TensorFlow-DirectML-Plugin</a></p>
+<div class="highlight"><pre><span></span><code>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span><span class="nv">cudatoolkit</span><span class="o">=</span><span class="m">11</span>.2<span class="w"> </span><span class="nv">cudnn</span><span class="o">=</span><span class="m">8</span>.1.0
+<span class="c1"># Anything above 2.10 is not supported on the GPU on Windows Native</span>
+python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span><span class="s2">&quot;tensorflow&lt;2.11&quot;</span>
+
+To<span class="w"> </span>install<span class="w"> </span>additional<span class="w"> </span>packages<span class="w"> </span>required<span class="w"> </span><span class="k">for</span><span class="w"> </span>the<span class="w"> </span>course<span class="w"> </span>such<span class="w"> </span>as<span class="w"> </span>scikit-learn,<span class="w"> </span>pandas,<span class="w"> </span>pillow,<span class="w"> </span>and<span class="w"> </span>Jupyter,<span class="w"> </span>use<span class="w"> </span>the<span class="w"> </span>following<span class="w"> </span>command:
+
+pip<span class="w"> </span>install<span class="w"> </span>scikit-learn<span class="w"> </span>pandas<span class="w"> </span>pillow<span class="w"> </span>jupyter
+<span class="c1"># Verify install:</span>
+python<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import tensorflow as tf; print(tf.config.list_physical_devices(&#39;GPU&#39;))&quot;</span>
+</code></pre></div>
+<h2 id="windows-wsl2">Windows WSL2<a class="headerlink" href="#windows-wsl2" title="Permanent link">#</a></h2>
+<p>Note: TensorFlow with GPU access is supported for WSL2 on Windows 10 19044 or
+higher. This corresponds to Windows 10 version 21H2, the November 2021
+update. You can get the latest update from here:
+<a href="https://www.microsoft.com/software-download/windows10">Download Windows 10</a>.
+For instructions, see
+<a href="https://docs.microsoft.com/windows/wsl/install">Install WSL2</a>
+and
+<a href="https://docs.nvidia.com/cuda/wsl-user-guide/index.html">NVIDIA’s setup docs</a>
+for CUDA in WSL.</p>
+<div class="highlight"><pre><span></span><code>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span><span class="nv">cudatoolkit</span><span class="o">=</span><span class="m">11</span>.8.0
+python3<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>nvidia-cudnn-cu11<span class="o">==</span><span class="m">8</span>.6.0.163<span class="w"> </span><span class="nv">tensorflow</span><span class="o">==</span><span class="m">2</span>.13.*
+
+To<span class="w"> </span>install<span class="w"> </span>additional<span class="w"> </span>packages<span class="w"> </span>required<span class="w"> </span><span class="k">for</span><span class="w"> </span>the<span class="w"> </span>course<span class="w"> </span>such<span class="w"> </span>as<span class="w"> </span>scikit-learn,<span class="w"> </span>pandas,<span class="w"> </span>pillow,<span class="w"> </span>and<span class="w"> </span>Jupyter,<span class="w"> </span>use<span class="w"> </span>the<span class="w"> </span>following<span class="w"> </span>command:
+
+pip<span class="w"> </span>install<span class="w"> </span>scikit-learn<span class="w"> </span>pandas<span class="w"> </span>pillow<span class="w"> </span>jupyter
+mkdir<span class="w"> </span>-p<span class="w"> </span><span class="nv">$CONDA_PREFIX</span>/etc/conda/activate.d
+<span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;CUDNN_PATH=$(dirname $(python -c &quot;import nvidia.cudnn;print(nvidia.cudnn.__file__)&quot;))&#39;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span><span class="nv">$CONDA_PREFIX</span>/etc/conda/activate.d/env_vars.sh
+<span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;export LD_LIBRARY_PATH=$CUDNN_PATH/lib:$CONDA_PREFIX/lib/:$LD_LIBRARY_PATH&#39;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span><span class="nv">$CONDA_PREFIX</span>/etc/conda/activate.d/env_vars.sh
+<span class="nb">source</span><span class="w"> </span><span class="nv">$CONDA_PREFIX</span>/etc/conda/activate.d/env_vars.sh
+<span class="c1"># Verify install:</span>
+python3<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import tensorflow as tf; print(tf.config.list_physical_devices(&#39;GPU&#39;))&quot;</span>
+</code></pre></div>
+<h2 id="cpu">CPU<a class="headerlink" href="#cpu" title="Permanent link">#</a></h2>
+<p>Note: Starting with TensorFlow <code>2.10</code>, Windows CPU-builds for x86/x64
+processors are built, maintained, tested and released by a third party:
+<a href="https://www.intel.com/">Intel</a>.
+Installing the Windows-native <a href="https://pypi.org/project/tensorflow/"><code>tensorflow</code></a>
+or <a href="https://pypi.org/project/tensorflow-cpu/"><code>tensorflow-cpu</code></a>
+package installs Intel's
+<a href="https://pypi.org/project/tensorflow-intel/"><code>tensorflow-intel</code></a>
+package. These packages are provided as-is. Tensorflow will use reasonable
+efforts to maintain the availability and integrity of this pip package.
+There may be delays if the third party fails to release the pip package. See
+<a href="https://blog.tensorflow.org/2022/09/announcing-tensorflow-official-build-collaborators.html">this blog post</a>
+for more information about this
+collaboration.</p>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>tensorflow
+
+To<span class="w"> </span>install<span class="w"> </span>additional<span class="w"> </span>packages<span class="w"> </span>required<span class="w"> </span><span class="k">for</span><span class="w"> </span>the<span class="w"> </span>course<span class="w"> </span>such<span class="w"> </span>as<span class="w"> </span>scikit-learn,<span class="w"> </span>pandas,<span class="w"> </span>pillow,<span class="w"> </span>and<span class="w"> </span>Jupyter,<span class="w"> </span>use<span class="w"> </span>the<span class="w"> </span>following<span class="w"> </span>command:
+
+pip<span class="w"> </span>install<span class="w"> </span>scikit-learn<span class="w"> </span>pandas<span class="w"> </span>pillow<span class="w"> </span>jupyter
+</code></pre></div>
+<h2 id="verify-install">Verify install:<a class="headerlink" href="#verify-install" title="Permanent link">#</a></h2>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import tensorflow as tf; print(tf.reduce_sum(tf.random.normal([1000, 1000])))&quot;</span>
+</code></pre></div>
+<h2 id="nightly">Nightly<a class="headerlink" href="#nightly" title="Permanent link">#</a></h2>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>tf-nightly
+
+To<span class="w"> </span>install<span class="w"> </span>additional<span class="w"> </span>packages<span class="w"> </span>required<span class="w"> </span><span class="k">for</span><span class="w"> </span>the<span class="w"> </span>course<span class="w"> </span>such<span class="w"> </span>as<span class="w"> </span>scikit-learn,<span class="w"> </span>pandas,<span class="w"> </span>pillow,<span class="w"> </span>and<span class="w"> </span>Jupyter,<span class="w"> </span>use<span class="w"> </span>the<span class="w"> </span>following<span class="w"> </span>command:
+
+pip<span class="w"> </span>install<span class="w"> </span>scikit-learn<span class="w"> </span>pandas<span class="w"> </span>pillow<span class="w"> </span>jupyter
+</code></pre></div>
+<h2 id="verify-install_1">Verify install:<a class="headerlink" href="#verify-install_1" title="Permanent link">#</a></h2>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import tensorflow as tf; print(tf.reduce_sum(tf.random.normal([1000, 1000])))&quot;</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<h2 id="hardware-requirements">Hardware requirements<a class="headerlink" href="#hardware-requirements" title="Permanent link">#</a></h2>
+<p>The following GPU-enabled devices are supported:</p>
+<ul>
+<li>NVIDIA® GPU card with CUDA® architectures 3.5, 5.0, 6.0, 7.0, 7.5, 8.0 and
+higher. See the list of
+<a href="https://developer.nvidia.com/cuda-gpus">CUDA®-enabled GPU cards</a>.</li>
+<li>For GPUs with unsupported CUDA® architectures, or to avoid JIT compilation
+from PTX, or to use different versions of the NVIDIA® libraries, see the
+<a href="./source.md">Linux build from source</a> guide.</li>
+<li>Packages do not contain PTX code except for the latest supported CUDA®
+architecture; therefore, TensorFlow fails to load on older GPUs when
+<code>CUDA_FORCE_PTX_JIT=1</code> is set. (See
+<a href="https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#application-compatibility">Application Compatibility</a>
+for details.)</li>
+</ul>
+<h2 id="system-requirements">System requirements<a class="headerlink" href="#system-requirements" title="Permanent link">#</a></h2>
+<ul>
+<li>Ubuntu 16.04 or higher (64-bit) or any other Linux System (64-bit)</li>
+<li>macOS 10.12.6 (Sierra) or higher (64-bit) <em>(no GPU support)</em></li>
+<li>Windows Native - Windows 7 or higher (64-bit) <em>(no GPU support after TF 2.10)</em></li>
+<li>Windows WSL2 - Windows 10 19044 or higher (64-bit)</li>
+</ul>
+<p>Note: GPU support is available for Ubuntu and Windows with CUDA®-enabled cards.</p>
+<h2 id="software-requirements">Software requirements<a class="headerlink" href="#software-requirements" title="Permanent link">#</a></h2>
+<ul>
+<li>Python 3.8–3.11</li>
+<li>pip version 19.0 or higher for Linux (requires <code>manylinux2014</code> support) and
+Windows. pip version 20.3 or higher for macOS.</li>
+<li>Windows Native Requires
+<a href="https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads">Microsoft Visual C++ Redistributable for Visual Studio 2015, 2017 and 2019</a></li>
+</ul>
+<p>The following NVIDIA® software are only required for GPU support.</p>
+<ul>
+<li><a href="https://www.nvidia.com/drivers">NVIDIA® GPU drivers</a>
+version 450.80.02 or higher.</li>
+<li><a href="https://developer.nvidia.com/cuda-toolkit-archive">CUDA® Toolkit 11.8</a>.</li>
+<li><a href="https://developer.nvidia.com/cudnn">cuDNN SDK 8.6.0</a>.</li>
+<li><em>(Optional)</em>
+<a href="https://docs.nvidia.com/deeplearning/tensorrt/archives/index.html#trt_7">TensorRT</a>
+to improve latency and throughput for inference.</li>
+</ul>
+<h2 id="step-by-step-instructions">Step-by-step instructions<a class="headerlink" href="#step-by-step-instructions" title="Permanent link">#</a></h2>
+<h1 id="_1"><a class="headerlink" href="#_1" title="Permanent link">#</a></h1>
+<h2 id="linux">Linux<a class="headerlink" href="#linux" title="Permanent link">#</a></h2>
+<h3 id="_2"><a class="headerlink" href="#_2" title="Permanent link">#</a></h3>
+<h2 id="1-system-requirements">1. System requirements<a class="headerlink" href="#1-system-requirements" title="Permanent link">#</a></h2>
+<ul>
+<li>Ubuntu 16.04 or higher (64-bit)</li>
+</ul>
+<p>TensorFlow only officially support Ubuntu. However, the following
+instructions may also work for other Linux distros.</p>
+<p>Note: Starting with TensorFlow <code>2.10</code>, Linux CPU-builds for Aarch64/ARM64
+processors are built, maintained, tested and released by a third party:
+<a href="https://aws.amazon.com/">AWS</a>.
+Installing the <a href="https://pypi.org/project/tensorflow/"><code>tensorflow</code></a>
+package on an ARM machine installs AWS's
+<a href="https://pypi.org/project/tensorflow-cpu-aws/"><code>tensorflow-cpu-aws</code></a> package.
+They are provided as-is. Tensorflow will use reasonable efforts to maintain
+the availability and integrity of this pip package. There may be delays if
+the third party fails to release the pip package. See
+<a href="https://blog.tensorflow.org/2022/09/announcing-tensorflow-official-build-collaborators.html">this blog post</a>
+for more information about this collaboration.</p>
+<h3 id="_3"><a class="headerlink" href="#_3" title="Permanent link">#</a></h3>
+<h2 id="2-install-miniconda">2. Install Miniconda<a class="headerlink" href="#2-install-miniconda" title="Permanent link">#</a></h2>
+<p><a href="https://docs.conda.io/en/latest/miniconda.html">Miniconda</a> is the
+recommended approach for installing TensorFlow with GPU support.
+It creates a separate environment to avoid changing any installed
+software in your system. This is also the easiest way to install the required
+software especially for the GPU setup.</p>
+<p>You can use the following command to install Miniconda. During installation,
+you may need to press enter and type "yes".</p>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh<span class="w"> </span>-o<span class="w"> </span>Miniconda3-latest-Linux-x86_64.sh
+bash<span class="w"> </span>Miniconda3-latest-Linux-x86_64.sh
+</code></pre></div>
+<p>You may need to restart your terminal or <code>source ~/.bashrc</code> to enable the
+<code>conda</code> command. Use <code>conda -V</code> to test if it is installed successfully.</p>
+<h3 id="_4"><a class="headerlink" href="#_4" title="Permanent link">#</a></h3>
+<h2 id="3-create-a-conda-environment">3. Create a conda environment<a class="headerlink" href="#3-create-a-conda-environment" title="Permanent link">#</a></h2>
+<p>Create a new conda environment named <code>tf</code> with the following command.</p>
+<div class="highlight"><pre><span></span><code>conda<span class="w"> </span>create<span class="w"> </span>--name<span class="w"> </span>tf<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.9
+</code></pre></div>
+<p>You can deactivate and activate it with the following commands.</p>
+<div class="highlight"><pre><span></span><code>conda<span class="w"> </span>deactivate
+conda<span class="w"> </span>activate<span class="w"> </span>tf
+</code></pre></div>
+<p>Make sure it is activated for the rest of the installation.</p>
+<h3 id="_5"><a class="headerlink" href="#_5" title="Permanent link">#</a></h3>
+<h2 id="4-gpu-setup">4. GPU Setup<a class="headerlink" href="#4-gpu-setup" title="Permanent link">#</a></h2>
+<p>You can skip this section if you only run TensorFlow on the CPU.</p>
+<p>First install the
+<a href="https://www.nvidia.com/Download/index.aspx">NVIDIA GPU driver</a>
+if you have not. You can use the following command to verify it is
+installed.</p>
+<div class="highlight"><pre><span></span><code>nvidia-smi
+</code></pre></div>
+<p>Then install CUDA and cuDNN with conda and pip.</p>
+<div class="highlight"><pre><span></span><code>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span><span class="nv">cudatoolkit</span><span class="o">=</span><span class="m">11</span>.8.0
+pip<span class="w"> </span>install<span class="w"> </span>nvidia-cudnn-cu11<span class="o">==</span><span class="m">8</span>.6.0.163
+
+To<span class="w"> </span>install<span class="w"> </span>additional<span class="w"> </span>packages<span class="w"> </span>required<span class="w"> </span><span class="k">for</span><span class="w"> </span>the<span class="w"> </span>course<span class="w"> </span>such<span class="w"> </span>as<span class="w"> </span>scikit-learn,<span class="w"> </span>pandas,<span class="w"> </span>pillow,<span class="w"> </span>and<span class="w"> </span>Jupyter,<span class="w"> </span>use<span class="w"> </span>the<span class="w"> </span>following<span class="w"> </span>command:
+
+pip<span class="w"> </span>install<span class="w"> </span>scikit-learn<span class="w"> </span>pandas<span class="w"> </span>pillow<span class="w"> </span>jupyter
+</code></pre></div>
+<p>Configure the system paths. You can do it with the following command every time
+you start a new terminal after activating your conda environment.</p>
+<div class="highlight"><pre><span></span><code><span class="nv">CUDNN_PATH</span><span class="o">=</span><span class="k">$(</span>dirname<span class="w"> </span><span class="k">$(</span>python<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import nvidia.cudnn;print(nvidia.cudnn.__file__)&quot;</span><span class="k">))</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span><span class="nv">$CUDNN_PATH</span>/lib:<span class="nv">$CONDA_PREFIX</span>/lib/:<span class="nv">$LD_LIBRARY_PATH</span>
+</code></pre></div>
+<p>For your convenience it is recommended that you automate it with the following
+commands. The system paths will be automatically configured when you
+activate this conda environment.</p>
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>-p<span class="w"> </span><span class="nv">$CONDA_PREFIX</span>/etc/conda/activate.d
+<span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;CUDNN_PATH=$(dirname $(python -c &quot;import nvidia.cudnn;print(nvidia.cudnn.__file__)&quot;))&#39;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span><span class="nv">$CONDA_PREFIX</span>/etc/conda/activate.d/env_vars.sh
+<span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;export LD_LIBRARY_PATH=$CUDNN_PATH/lib:$CONDA_PREFIX/lib/:$LD_LIBRARY_PATH&#39;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span><span class="nv">$CONDA_PREFIX</span>/etc/conda/activate.d/env_vars.sh
+</code></pre></div>
+<h3 id="_6"><a class="headerlink" href="#_6" title="Permanent link">#</a></h3>
+<h2 id="5-install-tensorflow">5. Install TensorFlow<a class="headerlink" href="#5-install-tensorflow" title="Permanent link">#</a></h2>
+<p>TensorFlow requires a recent version of pip, so upgrade your pip
+installation to be sure you're running the latest version.</p>
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>pip
+
+<span class="c1"># To install additional packages required for the course such as scikit-learn, pandas, pillow, and Jupyter, use the following command:</span>
+
+pip<span class="w"> </span>install<span class="w"> </span>scikit-learn<span class="w"> </span>pandas<span class="w"> </span>pillow<span class="w"> </span>jupyter
+</code></pre></div>
+<p>Then, install TensorFlow with pip.</p>
+<p>Note: Do not install TensorFlow with conda. It may not have the latest stable
+version. pip is recommended since TensorFlow is only officially released to
+PyPI.</p>
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span><span class="nv">tensorflow</span><span class="o">==</span><span class="m">2</span>.13.*
+
+To<span class="w"> </span>install<span class="w"> </span>additional<span class="w"> </span>packages<span class="w"> </span>required<span class="w"> </span><span class="k">for</span><span class="w"> </span>the<span class="w"> </span>course<span class="w"> </span>such<span class="w"> </span>as<span class="w"> </span>scikit-learn,<span class="w"> </span>pandas,<span class="w"> </span>pillow,<span class="w"> </span>and<span class="w"> </span>Jupyter,<span class="w"> </span>use<span class="w"> </span>the<span class="w"> </span>following<span class="w"> </span>command:
+
+pip<span class="w"> </span>install<span class="w"> </span>scikit-learn<span class="w"> </span>pandas<span class="w"> </span>pillow<span class="w"> </span>jupyter
+</code></pre></div>
+<h2 id="_7"><a class="headerlink" href="#_7" title="Permanent link">#</a></h2>
+<h2 id="6-verify-install">6. Verify Install<a class="headerlink" href="#6-verify-install" title="Permanent link">#</a></h2>
+<p>Verify the CPU setup:</p>
+<p><div class="highlight"><pre><span></span><code>python3<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import tensorflow as tf; print(tf.reduce_sum(tf.random.normal([1000, 1000])))&quot;</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>If<span class="w"> </span>a<span class="w"> </span>tensor<span class="w"> </span>is<span class="w"> </span>returned,<span class="w"> </span>you<span class="err">&#39;</span>ve<span class="w"> </span>installed<span class="w"> </span>TensorFlow<span class="w"> </span>successfully.
+
+Verify<span class="w"> </span>the<span class="w"> </span>GPU<span class="w"> </span>setup:
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import tensorflow as tf; print(tf.config.list_physical_devices(&#39;GPU&#39;))&quot;</span>
+</code></pre></div></p>
+<p>If a list of GPU devices is returned, you've installed TensorFlow
+successfully.</p>
+<h1 id="_8"><a class="headerlink" href="#_8" title="Permanent link">#</a></h1>
+<h2 id="ubuntu-2204">Ubuntu 22.04<a class="headerlink" href="#ubuntu-2204" title="Permanent link">#</a></h2>
+<p>In Ubuntu 22.04, you may encounter the following error:</p>
+<div class="highlight"><pre><span></span><code>Can<span class="s1">&#39;t find libdevice directory ${CUDA_DIR}/nvvm/libdevice.</span>
+<span class="s1">...</span>
+<span class="s1">Couldn&#39;</span>t<span class="w"> </span>invoke<span class="w"> </span>ptxas<span class="w"> </span>--version
+...
+InternalError:<span class="w"> </span>libdevice<span class="w"> </span>not<span class="w"> </span>found<span class="w"> </span>at<span class="w"> </span>./libdevice.10.bc<span class="w"> </span><span class="o">[</span>Op:__some_op<span class="o">]</span>
+</code></pre></div>
+<p>To fix this error, you will need to run the following commands.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Install NVCC</span>
+conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>nvidia<span class="w"> </span>cuda-nvcc<span class="o">=</span><span class="m">11</span>.3.58
+<span class="c1"># Configure the XLA cuda directory</span>
+mkdir<span class="w"> </span>-p<span class="w"> </span><span class="nv">$CONDA_PREFIX</span>/etc/conda/activate.d
+<span class="nb">printf</span><span class="w"> </span><span class="s1">&#39;export XLA_FLAGS=--xla_gpu_cuda_data_dir=$CONDA_PREFIX/lib/\n&#39;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span><span class="nv">$CONDA_PREFIX</span>/etc/conda/activate.d/env_vars.sh
+<span class="nb">source</span><span class="w"> </span><span class="nv">$CONDA_PREFIX</span>/etc/conda/activate.d/env_vars.sh
+<span class="c1"># Copy libdevice file to the required path</span>
+mkdir<span class="w"> </span>-p<span class="w"> </span><span class="nv">$CONDA_PREFIX</span>/lib/nvvm/libdevice
+cp<span class="w"> </span><span class="nv">$CONDA_PREFIX</span>/lib/libdevice.10.bc<span class="w"> </span><span class="nv">$CONDA_PREFIX</span>/lib/nvvm/libdevice/
+</code></pre></div>
+<h1 id="_9"><a class="headerlink" href="#_9" title="Permanent link">#</a></h1>
+<h2 id="macos">MacOS<a class="headerlink" href="#macos" title="Permanent link">#</a></h2>
+<h2 id="_10"><a class="headerlink" href="#_10" title="Permanent link">#</a></h2>
+<h2 id="1-system-requirements_1">1. System requirements<a class="headerlink" href="#1-system-requirements_1" title="Permanent link">#</a></h2>
+<ul>
+<li>macOS 10.12.6 (Sierra) or higher (64-bit)</li>
+</ul>
+<p>Note: While TensorFlow supports Apple Silicon (M1), packages that include
+custom C++ extensions for TensorFlow also need to be compiled for Apple M1.
+Some packages, like
+<a href="https://www.tensorflow.org/decision_forests">tensorflow_decision_forests</a>
+publish M1-compatible versions, but many packages don't. To use those
+libraries, you will have to use TensorFlow with x86 emulation and Rosetta.</p>
+<p>Currently there is no official GPU support for running TensorFlow on
+MacOS. The following instructions are for running on CPU.</p>
+<h2 id="_11"><a class="headerlink" href="#_11" title="Permanent link">#</a></h2>
+<h2 id="2-check-python-version">2. Check Python version<a class="headerlink" href="#2-check-python-version" title="Permanent link">#</a></h2>
+<p>Check if your Python environment is already configured:</p>
+<p>Note: Requires Python 3.8–3.11, and pip &gt;= 20.3 for MacOS.</p>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>--version
+python3<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>--version
+</code></pre></div>
+<h2 id="_12"><a class="headerlink" href="#_12" title="Permanent link">#</a></h2>
+<h2 id="3-install-miniconda">3. Install Miniconda<a class="headerlink" href="#3-install-miniconda" title="Permanent link">#</a></h2>
+<p><a href="https://docs.conda.io/en/latest/miniconda.html">Miniconda</a>
+is the recommended approach for installing TensorFlow.
+It creates a separate environment to avoid changing any installed
+software in your system.</p>
+<p>Note: Miniconda is not a requirement for running TensorFlow on CPU. If you'd
+prefer to create a virtual environment using
+<a href="https://docs.python.org/3/library/venv.html">venv</a> or
+<a href="https://virtualenv.pypa.io/en/latest/">Virtualenv</a>, you can do so. Just
+adjust the installation steps accordingly, and then follow the instructions
+to install TensorFlow using pip.</p>
+<p>Install Miniconda:</p>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh<span class="w"> </span>-o<span class="w"> </span>Miniconda3-latest-MacOSX-x86_64.sh
+bash<span class="w"> </span>Miniconda3-latest-MacOSX-x86_64.sh
+</code></pre></div>
+<p>You may need to restart your terminal or <code>source ~/.bashrc</code> to enable the
+<code>conda</code> command. Use <code>conda -V</code> to test if it is installed successfully.</p>
+<h1 id="_13"><a class="headerlink" href="#_13" title="Permanent link">#</a></h1>
+<h2 id="4-create-a-conda-environment">4. Create a conda environment<a class="headerlink" href="#4-create-a-conda-environment" title="Permanent link">#</a></h2>
+<p>Create a new conda environment named <code>tf</code> with the following command.</p>
+<div class="highlight"><pre><span></span><code>conda<span class="w"> </span>create<span class="w"> </span>--name<span class="w"> </span>tf<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.9
+</code></pre></div>
+<p>You can deactivate and activate it with the following commands.</p>
+<div class="highlight"><pre><span></span><code>conda<span class="w"> </span>deactivate
+conda<span class="w"> </span>activate<span class="w"> </span>tf
+</code></pre></div>
+<p>Make sure it is activated for the rest of the installation.</p>
+<h2 id="_14"><a class="headerlink" href="#_14" title="Permanent link">#</a></h2>
+<h2 id="5-install-tensorflow_1">5. Install TensorFlow<a class="headerlink" href="#5-install-tensorflow_1" title="Permanent link">#</a></h2>
+<p>TensorFlow requires a recent version of pip, so upgrade your pip
+installation to be sure you're running the latest version.</p>
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>pip
+
+To<span class="w"> </span>install<span class="w"> </span>additional<span class="w"> </span>packages<span class="w"> </span>required<span class="w"> </span><span class="k">for</span><span class="w"> </span>the<span class="w"> </span>course<span class="w"> </span>such<span class="w"> </span>as<span class="w"> </span>scikit-learn,<span class="w"> </span>pandas,<span class="w"> </span>pillow,<span class="w"> </span>and<span class="w"> </span>Jupyter,<span class="w"> </span>use<span class="w"> </span>the<span class="w"> </span>following<span class="w"> </span>command:
+
+pip<span class="w"> </span>install<span class="w"> </span>scikit-learn<span class="w"> </span>pandas<span class="w"> </span>pillow<span class="w"> </span>jupyter
+</code></pre></div>
+<p>Then, install TensorFlow with pip.</p>
+<p>Note: Do not install TensorFlow with conda. It may not have the latest stable
+version. pip is recommended since TensorFlow is only officially released to
+PyPI.</p>
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>tensorflow
+
+<span class="c1"># To install additional packages required for the course such as scikit-learn, pandas, pillow, and Jupyter, use the following command:</span>
+
+pip<span class="w"> </span>install<span class="w"> </span>scikit-learn<span class="w"> </span>pandas<span class="w"> </span>pillow<span class="w"> </span>jupyter
+</code></pre></div>
+<h2 id="_15"><a class="headerlink" href="#_15" title="Permanent link">#</a></h2>
+<h2 id="6-verify-install_1">6. Verify Install<a class="headerlink" href="#6-verify-install_1" title="Permanent link">#</a></h2>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import tensorflow as tf; print(tf.reduce_sum(tf.random.normal([1000, 1000])))&quot;</span>
+</code></pre></div>
+<p>If a tensor is returned, you've installed TensorFlow successfully.</p>
+<h1 id="_16"><a class="headerlink" href="#_16" title="Permanent link">#</a></h1>
+<h2 id="windows-native_1">Windows Native<a class="headerlink" href="#windows-native_1" title="Permanent link">#</a></h2>
+<p>Caution: TensorFlow <code>2.10</code> was the <strong>last</strong> TensorFlow release that
+supported GPU on native-Windows.
+Starting with TensorFlow <code>2.11</code>, you will need to install
+<a href="https://tensorflow.org/install/pip#windows-[wsl2]">TensorFlow in WSL2</a>,
+or install <code>tensorflow-cpu</code> and, optionally, try the
+<a href="https://github.com/microsoft/tensorflow-directml-plugin#tensorflow-directml-plugin-">TensorFlow-DirectML-Plugin</a></p>
+<h2 id="1-system-requirements_2">1. System requirements<a class="headerlink" href="#1-system-requirements_2" title="Permanent link">#</a></h2>
+<ul>
+<li>Windows 7 or higher (64-bit)</li>
+</ul>
+<p>Note: Starting with TensorFlow <code>2.10</code>, Windows CPU-builds for x86/x64
+processors are built, maintained, tested and released by a third party:
+<a href="https://www.intel.com/">Intel</a>.
+Installing the windows-native <a href="https://pypi.org/project/tensorflow/"><code>tensorflow</code></a>
+or <a href="https://pypi.org/project/tensorflow-cpu/"><code>tensorflow-cpu</code></a>
+package installs Intel's
+<a href="https://pypi.org/project/tensorflow-intel/"><code>tensorflow-intel</code></a>
+package. These packages are provided as-is. Tensorflow will use reasonable
+efforts to maintain the availability and integrity of this pip package.
+There may be delays if the third party fails to release the pip package. See
+<a href="https://blog.tensorflow.org/2022/09/announcing-tensorflow-official-build-collaborators.html">this blog post</a>
+for more information about this
+collaboration.</p>
+<h2 id="_17"><a class="headerlink" href="#_17" title="Permanent link">#</a></h2>
+<h2 id="2-install-microsoft-visual-c-redistributable">2. Install Microsoft Visual C++ Redistributable<a class="headerlink" href="#2-install-microsoft-visual-c-redistributable" title="Permanent link">#</a></h2>
+<p>Install the <em>Microsoft Visual C++ Redistributable for Visual Studio 2015,
+2017, and 2019</em>. Starting with the TensorFlow 2.1.0 version, the
+<code>msvcp140_1.dll</code> file is required from this package (which may not be
+provided from older redistributable packages). The redistributable comes
+with <em>Visual Studio 2019</em> but can be installed separately:</p>
+<ol>
+<li>Go to the
+<a href="https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads">Microsoft Visual C++ downloads</a>.</li>
+<li>Scroll down the page to the <em>Visual Studio 2015, 2017 and 2019</em> section.</li>
+<li>Download and install the <em>Microsoft Visual C++ Redistributable for
+Visual Studio 2015, 2017 and 2019</em> for your platform.</li>
+</ol>
+<p>Make sure
+<a href="https://superuser.com/questions/1119883/windows-10-enable-ntfs-long-paths-policy-option-missing">long paths are enabled</a>
+on Windows.</p>
+<h2 id="_18"><a class="headerlink" href="#_18" title="Permanent link">#</a></h2>
+<h2 id="3-install-miniconda_1">3. Install Miniconda<a class="headerlink" href="#3-install-miniconda_1" title="Permanent link">#</a></h2>
+<p><a href="https://docs.conda.io/en/latest/miniconda.html">Miniconda</a>
+is the recommended approach for installing TensorFlow with GPU support.
+It creates a separate environment to avoid changing any installed
+software in your system. This is also the easiest way to install the
+required software especially for the GPU setup.</p>
+<p>Download the
+<a href="https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe">Miniconda Windows Installer</a>.
+Double-click the downloaded file and follow the instructions on the screen.</p>
+<h1 id="_19"><a class="headerlink" href="#_19" title="Permanent link">#</a></h1>
+<h2 id="4-create-a-conda-environment_1">4. Create a conda environment<a class="headerlink" href="#4-create-a-conda-environment_1" title="Permanent link">#</a></h2>
+<p>Create a new conda environment named <code>tf</code> with the following command.</p>
+<div class="highlight"><pre><span></span><code>conda<span class="w"> </span>create<span class="w"> </span>--name<span class="w"> </span>tf<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.9
+</code></pre></div>
+<p>You can deactivate and activate it with the following commands.</p>
+<div class="highlight"><pre><span></span><code>conda<span class="w"> </span>deactivate
+conda<span class="w"> </span>activate<span class="w"> </span>tf
+</code></pre></div>
+<p>Make sure it is activated for the rest of the installation.</p>
+<h1 id="_20"><a class="headerlink" href="#_20" title="Permanent link">#</a></h1>
+<h2 id="5-gpu-setup">5. GPU setup<a class="headerlink" href="#5-gpu-setup" title="Permanent link">#</a></h2>
+<p>You can skip this section if you only run TensorFlow on CPU.</p>
+<p>First install
+<a href="https://www.nvidia.com/Download/index.aspx">NVIDIA GPU driver</a>
+if you have not.</p>
+<p>Then install the CUDA, cuDNN with conda.</p>
+<div class="highlight"><pre><span></span><code>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span><span class="nv">cudatoolkit</span><span class="o">=</span><span class="m">11</span>.2<span class="w"> </span><span class="nv">cudnn</span><span class="o">=</span><span class="m">8</span>.1.0
+</code></pre></div>
+<h1 id="_21"><a class="headerlink" href="#_21" title="Permanent link">#</a></h1>
+<h2 id="6-install-tensorflow">6. Install TensorFlow<a class="headerlink" href="#6-install-tensorflow" title="Permanent link">#</a></h2>
+<p>TensorFlow requires a recent version of pip, so upgrade your pip
+installation to be sure you're running the latest version.</p>
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>pip
+</code></pre></div>
+<p>To install additional packages required for the course such as scikit-learn, pandas, pillow, and Jupyter, use the following command:</p>
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>scikit-learn<span class="w"> </span>pandas<span class="w"> </span>pillow<span class="w"> </span>jupyter
+</code></pre></div>
+<p>Then, install TensorFlow with pip.</p>
+<p>Note: Do not install TensorFlow with conda. It may not have the latest stable
+version. pip is recommended since TensorFlow is only officially released to
+PyPI.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Anything above 2.10 is not supported on the GPU on Windows Native</span>
+pip<span class="w"> </span>install<span class="w"> </span><span class="s2">&quot;tensorflow&lt;2.11&quot;</span><span class="w"> </span>
+</code></pre></div>
+<p>To install additional packages required for the course such as scikit-learn, pandas, pillow, and Jupyter, use the following command:</p>
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>scikit-learn<span class="w"> </span>pandas<span class="w"> </span>pillow<span class="w"> </span>jupyter
+</code></pre></div>
+<h1 id="_22"><a class="headerlink" href="#_22" title="Permanent link">#</a></h1>
+<h2 id="7-verify-install">7. Verify install<a class="headerlink" href="#7-verify-install" title="Permanent link">#</a></h2>
+<p>Verify the CPU setup:</p>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import tensorflow as tf; print(tf.reduce_sum(tf.random.normal([1000, 1000])))&quot;</span>
+</code></pre></div>
+<p>If a tensor is returned, you've installed TensorFlow successfully.</p>
+<p>Verify the GPU setup:</p>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import tensorflow as tf; print(tf.config.list_physical_devices(&#39;GPU&#39;))&quot;</span>
+</code></pre></div>
+<p>If a list of GPU devices is returned, you've installed TensorFlow
+successfully.</p>
+<h1 id="_23"><a class="headerlink" href="#_23" title="Permanent link">#</a></h1>
+<h2 id="windows-wsl2_1">Windows WSL2<a class="headerlink" href="#windows-wsl2_1" title="Permanent link">#</a></h2>
+<h2 id="_24"><a class="headerlink" href="#_24" title="Permanent link">#</a></h2>
+<h2 id="1-system-requirements_3">1. System requirements<a class="headerlink" href="#1-system-requirements_3" title="Permanent link">#</a></h2>
+<ul>
+<li>Windows 10 19044 or higher (64-bit). This corresponds to Windows 10
+version 21H2, the November 2021 update.</li>
+</ul>
+<p>See the following documents to:</p>
+<ul>
+<li><a href="https://www.microsoft.com/software-download/windows10">Download the latest Windows 10 update</a>.</li>
+<li><a href="https://docs.microsoft.com/windows/wsl/install">Install WSL2</a></li>
+<li><a href="https://docs.nvidia.com/cuda/wsl-user-guide/index.html">Setup NVIDIA® GPU support in WSL2</a></li>
+</ul>
+<h2 id="_25"><a class="headerlink" href="#_25" title="Permanent link">#</a></h2>
+<h2 id="2-install-miniconda_1">2. Install Miniconda<a class="headerlink" href="#2-install-miniconda_1" title="Permanent link">#</a></h2>
+<p><a href="https://docs.conda.io/en/latest/miniconda.html">Miniconda</a> is the
+recommended approach for installing TensorFlow with GPU support.
+It creates a separate environment to avoid changing any installed
+software in your system. This is also the easiest way to install the required
+software especially for the GPU setup.</p>
+<p>You can use the following command to install Miniconda. During installation,
+you may need to press enter and type "yes".</p>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh<span class="w"> </span>-o<span class="w"> </span>Miniconda3-latest-Linux-x86_64.sh
+bash<span class="w"> </span>Miniconda3-latest-Linux-x86_64.sh
+</code></pre></div>
+<p>You may need to restart your terminal or <code>source ~/.bashrc</code> to enable the
+<code>conda</code> command. Use <code>conda -V</code> to test if it is installed successfully.</p>
+<h2 id="_26"><a class="headerlink" href="#_26" title="Permanent link">#</a></h2>
+<h2 id="3-create-a-conda-environment_1">3. Create a conda environment<a class="headerlink" href="#3-create-a-conda-environment_1" title="Permanent link">#</a></h2>
+<p>Create a new conda environment named <a href="https://www.tensorflow.org/api_docs/python/tf"><code>tf</code></a> with the following command.</p>
+<p><div class="highlight"><pre><span></span><code>conda<span class="w"> </span>create<span class="w"> </span>--name<span class="w"> </span>tf<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.9
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>You<span class="w"> </span>can<span class="w"> </span>deactivate<span class="w"> </span>and<span class="w"> </span>activate<span class="w"> </span>it<span class="w"> </span>with<span class="w"> </span>the<span class="w"> </span>following<span class="w"> </span>commands.
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>conda<span class="w"> </span>deactivate
+conda<span class="w"> </span>activate<span class="w"> </span>tf
+</code></pre></div></p>
+<p>Make sure it is activated for the rest of the installation.</p>
+<h2 id="_27"><a class="headerlink" href="#_27" title="Permanent link">#</a></h2>
+<h2 id="4-gpu-setup_1">4. GPU Setup<a class="headerlink" href="#4-gpu-setup_1" title="Permanent link">#</a></h2>
+<p>You can skip this section if you only run TensorFlow on the CPU.</p>
+<p>First install the
+<a href="https://www.nvidia.com/Download/index.aspx">NVIDIA GPU driver</a>
+if you have not. You can use the following command to verify it is
+installed.</p>
+<div class="highlight"><pre><span></span><code>nvidia-smi
+</code></pre></div>
+<p>Then install CUDA and cuDNN with conda and pip.</p>
+<p><div class="highlight"><pre><span></span><code>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span><span class="nv">cudatoolkit</span><span class="o">=</span><span class="m">11</span>.8.0
+pip<span class="w"> </span>install<span class="w"> </span>nvidia-cudnn-cu11<span class="o">==</span><span class="m">8</span>.6.0.163
+</code></pre></div>
+To install additional packages required for the course such as scikit-learn, pandas, pillow, and Jupyter, use the following command:</p>
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>scikit-learn<span class="w"> </span>pandas<span class="w"> </span>pillow<span class="w"> </span>jupyter
+</code></pre></div>
+<p>Configure the system paths. You can do it with following command everytime
+your start a new terminal after activating your conda environment.</p>
+<div class="highlight"><pre><span></span><code><span class="nv">CUDNN_PATH</span><span class="o">=</span><span class="k">$(</span>dirname<span class="w"> </span><span class="k">$(</span>python<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import nvidia.cudnn;print(nvidia.cudnn.__file__)&quot;</span><span class="k">))</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span><span class="nv">$LD_LIBRARY_PATH</span>:<span class="nv">$CUDNN_PATH</span>/lib:<span class="nv">$CONDA_PREFIX</span>/lib/
+</code></pre></div>
+<p>For your convenience it is recommended that you automate it with the following
+commands. The system paths will be automatically configured when you
+activate this conda environment.</p>
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>-p<span class="w"> </span><span class="nv">$CONDA_PREFIX</span>/etc/conda/activate.d
+<span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;CUDNN_PATH=$(dirname $(python -c &quot;import nvidia.cudnn;print(nvidia.cudnn.__file__)&quot;))&#39;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span><span class="nv">$CONDA_PREFIX</span>/etc/conda/activate.d/env_vars.sh
+<span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CUDNN_PATH/lib:$CONDA_PREFIX/lib/&#39;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span><span class="nv">$CONDA_PREFIX</span>/etc/conda/activate.d/env_vars.sh
+</code></pre></div>
+<h2 id="_28"><a class="headerlink" href="#_28" title="Permanent link">#</a></h2>
+<h2 id="5-install-tensorflow_2">5. Install TensorFlow<a class="headerlink" href="#5-install-tensorflow_2" title="Permanent link">#</a></h2>
+<p>TensorFlow requires a recent version of pip, so upgrade your pip
+installation to be sure you're running the latest version.
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>pip
+</code></pre></div>
+To install additional packages required for the course such as scikit-learn, pandas, pillow, and Jupyter, use the following command:</p>
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>scikit-learn<span class="w"> </span>pandas<span class="w"> </span>pillow<span class="w"> </span>jupyter
+</code></pre></div>
+<p>Then, install TensorFlow with pip.</p>
+<p>Note: Do not install TensorFlow with conda. It may not have the latest stable
+version. pip is recommended since TensorFlow is only officially released to
+PyPI.</p>
+<p><div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span><span class="nv">tensorflow</span><span class="o">==</span><span class="m">2</span>.13.*
+</code></pre></div>
+To install additional packages required for the course such as scikit-learn, pandas, pillow, and Jupyter, use the following command:</p>
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>scikit-learn<span class="w"> </span>pandas<span class="w"> </span>pillow<span class="w"> </span>jupyter
+</code></pre></div>
+<h2 id="_29"><a class="headerlink" href="#_29" title="Permanent link">#</a></h2>
+<h2 id="6-verify-install_2">6. Verify Install<a class="headerlink" href="#6-verify-install_2" title="Permanent link">#</a></h2>
+<p>Verify the CPU setup:</p>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import tensorflow as tf; print(tf.reduce_sum(tf.random.normal([1000, 1000])))&quot;</span>
+</code></pre></div>
+<p>If a tensor is returned, you've installed TensorFlow successfully.</p>
+<p>Verify the GPU setup:</p>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import tensorflow as tf; print(tf.config.list_physical_devices(&#39;GPU&#39;))&quot;</span>
+</code></pre></div>
+<p>If a list of GPU devices is returned, you've installed TensorFlow
+successfully.</p>
+<h2 id="package-location">Package location<a class="headerlink" href="#package-location" title="Permanent link">#</a></h2>
+<p>A few installation mechanisms require the URL of the TensorFlow Python package.
+The value you specify depends on your Python version.</p>
+<table>
+<tr><th>Version</th><th>URL</th></tr>
+<tr><td colspan="2">Linux</td></tr>
+<tr>
+<td>Python 3.8 GPU&nbsp;support</td>
+<td >https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow-2.13.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl</td>
+</tr>
+<tr>
+<td>Python 3.8 CPU-only</td>
+<td >https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow_cpu-2.13.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl</td>
+</tr>
+<tr>
+<td>Python 3.9 GPU&nbsp;support</td>
+<td >https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow-2.13.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl</td>
+</tr>
+<tr>
+<td>Python 3.9 CPU-only</td>
+<td >https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow_cpu-2.13.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl</td>
+</tr>
+<tr>
+<td>Python 3.10 GPU&nbsp;support</td>
+<td >https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow-2.13.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl</td>
+</tr>
+<tr>
+<td>Python 3.10 CPU-only</td>
+<td >https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow_cpu-2.13.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl</td>
+</tr>
+
+<tr class="alt"><td colspan="2">macOS (CPU-only)</td></tr>
+<tr>
+<td>Python 3.8</td>
+<td >https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-2.13.0-cp38-cp38-macosx_10_15_x86_64.whl</td>
+</tr>
+<tr>
+<td>Python 3.9</td>
+<td >https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-2.13.0-cp39-cp39-macosx_10_15_x86_64.whl</td>
+</tr>
+<tr>
+<td>Python 3.10</td>
+<td >https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-2.13.0-cp310-cp310-macosx_10_15_x86_64.whl</td>
+</tr>
+
+<tr class="alt"><td colspan="2">Windows</td></tr>
+<tr>
+<td>Python 3.8 CPU-only</td>
+<td >https://storage.googleapis.com/tensorflow/windows/cpu/tensorflow_cpu-2.13.0-cp38-cp38-win_amd64.whl</td>
+</tr>
+<tr>
+<td>Python 3.9 CPU-only</td>
+<td >https://storage.googleapis.com/tensorflow/windows/cpu/tensorflow_cpu-2.13.0-cp39-cp39-win_amd64.whl</td>
+</tr>
+<tr>
+<td>Python 3.10 CPU-only</td>
+<td >https://storage.googleapis.com/tensorflow/windows/cpu/tensorflow_cpu-2.13.0-cp310-cp310-win_amd64.whl</td>
+</tr>
+
+</table>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/ARGF0RCE/OE4M74-Lab" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.top"], "search": "../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.78eede0e.min.js"></script>
+      
+    
+  </body>
+</html>
