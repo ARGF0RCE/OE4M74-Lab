@@ -38,6 +38,7 @@ nav:
   - Local Setup: 'setup.md'
   - 00. Getting Started with Python: 'Introduction_to_Python_Programming.ipynb'
   - 01. Data Processing Data representation and visualization: 'Data_Processing_Data_representation_and_visualization.ipynb'
+  - 01.01 Data Processing and EDA with IRIS Dataset: 'Data_Processing_and_EDA_with_IRIS_Dataset.ipynb'
 extra:
   social:
     - icon: fontawesome/brands/github
