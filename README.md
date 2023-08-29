@@ -1,4 +1,4 @@
-# OE4M74-Lab Documentation
+# [OE4M74-Lab Documentation](https://argf0rce.github.io/OE4M74-Lab/)
 
 Welcome to the OE4M74-Lab Documentation Site.
 
@@ -20,3 +20,4 @@ Welcome to the OE4M74-Lab Documentation Site.
 Almost daily updates of what's happening
 
 Aug 22 2023 - Start repo
+Aug 29 2023 - Updated 2nd lab and added an example notebook for IRIS Dataset
