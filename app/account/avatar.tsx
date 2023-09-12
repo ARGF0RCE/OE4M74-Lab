@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect, useState } from 'react'
-import { Database } from '../database.ts'
+import { Database } from '../database'
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 import Image from 'next/image'
 type Profiles = Database['public']['Tables']['profiles']['Row']
@@ -79,7 +79,7 @@ export default function Avatar({
         <div className="avatar no-image" style={{ height: size, width: size }} />
       )}
       <div style={{ width: size }}>
-        <label className="button primary block" htmlFor="single">
+        <label className="block button primary" htmlFor="single">
           {uploading ? 'Uploading ...' : 'Upload'}
         </label>
         <input
