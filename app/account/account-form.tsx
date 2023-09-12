@@ -74,10 +74,10 @@ export default function AccountForm({ session }: { session: Session | null }) {
   }
 
   return (
-	<div className="form-widget bg-dark text-foreground p-8 rounded-lg shadow-lg">
+	<div className="p-8 rounded-lg shadow-lg form-widget bg-dark text-foreground">
 
             {/* Avatar Section */}
-            <div className="mb-6 flex justify-center items-center">
+            <div className="flex items-center justify-center mb-6">
                 <Avatar
                     uid={user.id}
                     url={avatar_url}
@@ -93,7 +93,7 @@ export default function AccountForm({ session }: { session: Session | null }) {
             <div className="space-y-4">
                 <div>
                     <label htmlFor="email" className="block mb-2 text-sm font-medium">Email</label>
-                    <input id="email" type="text" value={session?.user.email} disabled className="w-full p-2 bg-gray-800 rounded border border-foreground/20 text-white" />
+                    <input id="email" type="text" value={session?.user.email} disabled className="w-full p-2 text-white bg-gray-800 border rounded border-foreground/20" />
                 </div>
                 <div>
                     <label htmlFor="fullName" className="block mb-2 text-sm font-medium">Full Name</label>
@@ -102,7 +102,7 @@ export default function AccountForm({ session }: { session: Session | null }) {
                         type="text"
                         value={fullname || ''}
                         onChange={(e) => setFullname(e.target.value)}
-                        className="w-full p-2 bg-gray-800 rounded border border-foreground/20"
+                        className="w-full p-2 bg-gray-800 border rounded border-foreground/20"
                     />
                 </div>
                 <div>
@@ -112,7 +112,7 @@ export default function AccountForm({ session }: { session: Session | null }) {
                         type="text"
                         value={username || ''}
                         onChange={(e) => setUsername(e.target.value)}
-                        className="w-full p-2 bg-gray-800 rounded border border-foreground/20"
+                        className="w-full p-2 bg-gray-800 border rounded border-foreground/20"
                     />
                 </div>
                 <div>
@@ -122,13 +122,13 @@ export default function AccountForm({ session }: { session: Session | null }) {
                         type="url"
                         value={website || ''}
                         onChange={(e) => setWebsite(e.target.value)}
-                        className="w-full p-2 bg-gray-800 rounded border border-foreground/20"
+                        className="w-full p-2 bg-gray-800 border rounded border-foreground/20"
                     />
                 </div>
 
                 <div className="mt-6">
                     <button
-                        className="button primary block w-full py-2 px-4 bg-btn-background hover:bg-btn-background-hover transform transition duration-150 ease-in-out hover:scale-105"
+                        className="block w-full px-4 py-2 button primary bg-btn-background hover:bg-btn-background-hover transform transition duration-150 ease-in-out hover:scale-105"
                         onClick={() => updateProfile({ fullname, username, website, avatar_url })}
                         disabled={loading}
                     >
@@ -138,14 +138,14 @@ export default function AccountForm({ session }: { session: Session | null }) {
 
                 <div className="mt-4">
                     <form action="/auth/sign-out" method="post">
-                        <button className="button block w-full py-2 px-4 bg-red-500 hover:bg-red-600 transform transition duration-150 ease-in-out hover:scale-105" type="submit">
+                        <button className="block w-full px-4 py-2 bg-red-500 button hover:bg-red-600 transform transition duration-150 ease-in-out hover:scale-105" type="submit">
                             Sign out
                         </button>
                     </form>
                 </div>
                 <div className="mt-4">
-					<form action="/assignment-upload/" method="post">
-                        <button className="button block w-full py-2 px-4 bg-red-500 hover:bg-red-600 transform transition duration-150 ease-in-out hover:scale-105" type="submit">
+					<form action="/auth/assignment-upload/" method="post">
+                        <button className="block w-full px-4 py-2 bg-red-500 button hover:bg-red-600 transform transition duration-150 ease-in-out hover:scale-105" type="submit">
                             Upload Assignments
                         </button>
                     </form>
