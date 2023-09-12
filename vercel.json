@@ -1,0 +1,16 @@
+{
+  "functions": {
+    "app/api/auth/assignment-upload/route.ts": {
+		      "memory": 1024
+	},
+    "app/api/auth/callback/route.ts": {
+		      "memory": 1024
+	},
+    "app/api/auth/sign-in/route.ts": {
+		      "memory": 1024
+	},
+	"app/api/auth/sign-out/route.ts": {
+		      "memory": 1024
+	}
+  }
+}

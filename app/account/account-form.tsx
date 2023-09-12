@@ -137,14 +137,14 @@ export default function AccountForm({ session }: { session: Session | null }) {
                 </div>
 
                 <div className="mt-4">
-                    <form action="/auth/sign-out" method="post">
+					<form action="/api/auth/sign-out" method="post">
                         <button className="block w-full px-4 py-2 bg-red-500 button hover:bg-red-600 transform transition duration-150 ease-in-out hover:scale-105" type="submit">
                             Sign out
                         </button>
                     </form>
                 </div>
                 <div className="mt-4">
-					<form action="/auth/assignment-upload/" method="post">
+					<form action="/api/auth/assignment-upload/" method="post">
                         <button className="block w-full px-4 py-2 bg-red-500 button hover:bg-red-600 transform transition duration-150 ease-in-out hover:scale-105" type="submit">
                             Upload Assignments
                         </button>
