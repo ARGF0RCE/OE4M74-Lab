@@ -1,21 +1,28 @@
-import { createServerComponentClient } from '@supabase/auth-helpers-nextjs'
-import { cookies } from 'next/headers'
+"use client"
+import { useCallback, useEffect, useState } from 'react'
+import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
+import type { Session } from '@supabase/auth-helpers-nextjs'
+// import { cookies } from 'next/headers'
 import Link from 'next/link'
 import LogoutButton from '../components/LogoutButton'
 import SupabaseLogo from '../components/SupabaseLogo'
 // import NextJsLogo from '../components/NextJsLogo'
 import SvgComponent from '../components/IIITLogo'
-import {Head} from 'next/document'
-export const dynamic = 'force-dynamic'
+export const dynamic = 'force-static'
 
 
-export default async function Index() {
-  const supabase = createServerComponentClient({ cookies })
+export default function Index({ session }: { session?: Session | null }) {
+	const supabase = createClientComponentClient()
+const [currentUser, setCurrentUser] = useState(null);
+const getUser = useCallback(async () => {
+	const { data: { user } } = await supabase.auth.getUser();
+	setCurrentUser(user)
+}, [session?.user, supabase]);
+  useEffect(() => {
+	  getUser();
+  }, [session?.user, getUser]);
 
-    const {
-        data: { user },
-    } = await supabase.auth.getUser()
-
+	  console.log(currentUser);
     return (
 		<div className="flex flex-col items-center w-full bg-dark text-foreground">
             {/* Navigation */}
@@ -23,9 +30,9 @@ export default async function Index() {
                 <div className="flex items-center justify-between w-full max-w-4xl p-3 text-sm">
                     <div />
                     <div>
-                        {user ? (
+                        {currentUser ? (
                             <div className="flex items-center gap-4">
-                                Hey, {user.email}!
+                                Hey, {currentUser.email}!
                                 <LogoutButton />
                             </div>
                         ) : (

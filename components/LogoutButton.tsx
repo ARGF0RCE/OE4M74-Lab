@@ -1,9 +1,16 @@
+import {createClientComponentClient} from "@supabase/auth-helpers-nextjs"
+import {useRouter} from "next/navigation"
+
 export default function LogoutButton() {
-  return (
-    <form action="/auth/sign-out" method="post">
-      <button className="py-2 px-4 rounded-md no-underline bg-btn-background hover:bg-btn-background-hover">
+	const router = useRouter()
+	const supabase = createClientComponentClient()
+	 const handleSignOut = async () => {
+    await supabase.auth.signOut()
+		 router.push("/login")
+  }
+	return (
+      <button onClick={handleSignOut} className="px-4 py-2 no-underline rounded-md bg-btn-background hover:bg-btn-background-hover">
         Logout
       </button>
-    </form>
   )
 }

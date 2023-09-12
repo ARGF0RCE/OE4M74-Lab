@@ -3,6 +3,7 @@ import { useCallback, useEffect, useState } from 'react'
 import { Database } from '../database'
 import { Session, createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 import Avatar from './avatar'
+import Link from 'next/link'
 export default function AccountForm({ session }: { session: Session | null }) {
   const supabase = createClientComponentClient<Database>()
   const [loading, setLoading] = useState(true)
@@ -11,7 +12,6 @@ export default function AccountForm({ session }: { session: Session | null }) {
   const [website, setWebsite] = useState<string | null>(null)
   const [avatar_url, setAvatarUrl] = useState<string | null>(null)
   const user = session?.user
-
   const getProfile = useCallback(async () => {
     try {
       setLoading(true)
@@ -19,7 +19,7 @@ export default function AccountForm({ session }: { session: Session | null }) {
       let { data, error, status } = await supabase
         .from('profiles')
         .select(`full_name, username, website, avatar_url`)
-        .eq('id', user?.id)
+        .eq('id', user.id)
         .single()
 
       if (error && status !== 406) {
@@ -67,7 +67,8 @@ export default function AccountForm({ session }: { session: Session | null }) {
       if (error) throw error
       alert('Profile updated!')
     } catch (error) {
-      alert('Error updating the data!')
+		console.log(error);
+		alert('Error updating the data!')
     } finally {
       setLoading(false)
     }
@@ -79,7 +80,7 @@ export default function AccountForm({ session }: { session: Session | null }) {
             {/* Avatar Section */}
             <div className="flex items-center justify-center mb-6">
                 <Avatar
-                    uid={user.id}
+                    uid={user?.id}
                     url={avatar_url}
                     size={150}
                     onUpload={(url) => {
@@ -137,18 +138,18 @@ export default function AccountForm({ session }: { session: Session | null }) {
                 </div>
 
                 <div className="mt-4">
-					<form action="/api/auth/sign-out" method="post">
+					<Link href="/">
                         <button className="block w-full px-4 py-2 bg-red-500 button hover:bg-red-600 transform transition duration-150 ease-in-out hover:scale-105" type="submit">
                             Sign out
                         </button>
-                    </form>
+					</Link>
                 </div>
                 <div className="mt-4">
-					<form action="/api/auth/assignment-upload/" method="post">
+					<Link href="/assignment-upload">
                         <button className="block w-full px-4 py-2 bg-red-500 button hover:bg-red-600 transform transition duration-150 ease-in-out hover:scale-105" type="submit">
                             Upload Assignments
                         </button>
-                    </form>
+					</Link>
                 </div>
             </div>
         </div>
